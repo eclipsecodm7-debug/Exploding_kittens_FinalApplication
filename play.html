@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exploding Kittens</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>Exploding Kittens</h1>
+
+    <div id="setup-area"> 
+        <input type="text" id="player-names" placeholder="Your name">
+        <button id="start-btn">Start Game</button>
+    </div>
+
+    <div id="game-area" class="hidden">
+        
+        <div id="players-area">
+        </div>
+
+        <div id="discard-area"> 
+            <div id="deck" title="Draw Card"></div>
+            <div id="discard-pile"></div> 
+            <body>
+        <div class="decorative-shape"></div>
+    <div class="decorative-shape"></div>
+    <div class="decorative-shape"></div>
+    <div class="decorative-shape"></div>
+    <div class="decorative-shape"></div>
+    <div class="game-container">
+        ```
+
+After updating both `style.css` and `index.html`, refresh your browser, and you should see the new, visually engaging game layout!
+
+Let me know if you'd like any specific colors or shapes tweaked further!
+        </div>
+        
+        <div id="messages"></div>
+
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>
